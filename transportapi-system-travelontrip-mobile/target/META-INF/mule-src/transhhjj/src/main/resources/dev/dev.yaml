@@ -1,0 +1,10 @@
+http:
+  Port: "8087"
+
+sqldb:
+
+  localhost: "localhost"
+  PORT: "3306"
+  user: "root"
+  password: "root"
+  dbName: "travelontrips"

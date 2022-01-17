@@ -1,0 +1,18 @@
+#%RAML 1.0 ResourceType
+ get:
+     headers: 
+      transactionId: 
+         type: string
+         minLength: 1
+     responses:
+       200:
+         body:
+          application/json:
+            examples: !include examples/routeexample.raml
+       400:
+         body:
+           application/json:
+            examples : {
+              "message" : "Bad Request"
+            }
+          
